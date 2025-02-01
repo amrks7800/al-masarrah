@@ -1,12 +1,13 @@
-import "./nav.css";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-// import Button from "../../components/button/Button";
-// import Donate from "/icons/donate.svg";
+import "./nav.css"
+import { Link, useNavigate } from "react-router-dom"
+import { useState } from "react"
+import { NavLink } from "react-router-dom"
+import Button from "../../components/button/Button"
+import User from "/icons/users.svg"
 
 const Nav = () => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(false)
+  const navigate = useNavigate()
 
   return (
     <nav>
@@ -35,13 +36,13 @@ const Nav = () => {
           </NavLink>
         </div>
 
-        {/* <Button icon={<img src={Donate} />}>تبرع الان</Button> */}
+        <Button onClick={() => navigate("/dashboard")}>لوحة التحكم</Button>
 
         <div className="menu">
           <span
             className={menu ? "menu-icon close" : "menu-icon"}
             onClick={() => {
-              setMenu((prev) => !prev);
+              setMenu(prev => !prev)
             }}
           >
             <svg role="presentation" viewBox="0 0 32 32">
@@ -55,7 +56,7 @@ const Nav = () => {
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav

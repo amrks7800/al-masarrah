@@ -35,6 +35,7 @@ nav .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-inline: auto;
 }
 
 nav .logo img {
@@ -110,6 +111,9 @@ nav .container .menu {
   nav .links a.active {
     background: none;
     color: var(--purple);
+  }
+  .menu {
+    display: none !important;
   }
 }
 
