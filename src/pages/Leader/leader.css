@@ -1,0 +1,23 @@
+.leader .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.leader h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--ment);
+  line-height: 1.5;
+}
+
+.leader h4 {
+  padding: 1rem;
+  font-weight: 700;
+  color: var(--Ment, #0c9eb7);
+  text-align: center;
+  line-height: 120%; /* 24px */
+  width: fit-content;
+  border-radius: 48px;
+  background: rgba(208, 248, 255, 0.7);
+}

@@ -1,0 +1,24 @@
+.projects {
+  padding-block: 40px;
+  background-color: #fafafa;
+}
+
+.projects > h2 {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.projects > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33.48px;
+  text-align: center;
+  color: var(--gray);
+}
+
+.projects .container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}

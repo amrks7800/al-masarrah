@@ -1,0 +1,56 @@
+.btn {
+  --drop-color: #ef7dd34f;
+  --bg-color: var(--purple);
+  --radius: 0.5rem;
+  box-shadow: -3.55px 5.17px 0px 0px var(--drop-color);
+  padding: 1rem 2rem;
+  background-color: var(--bg-color);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  border: 0;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.btn .loader {
+  height: 50px;
+}
+
+.btn:hover {
+  scale: 1.05;
+}
+
+.btn.secondary {
+  --drop-color: #c4f6ff;
+  --bg-color: var(--ment);
+}
+
+.btn.tertiary {
+  box-shadow: none;
+  --bg-color: white;
+  color: #0c9eb7;
+}
+
+.btn.pill {
+  --radius: 100vw;
+}
+
+.btn div {
+  gap: 4px;
+}
+
+.btn.ghost {
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+}
+
+.btn.lg {
+  width: 190px;
+}
+
+.btn[data-shadow="hidden"] {
+  box-shadow: none;
+}

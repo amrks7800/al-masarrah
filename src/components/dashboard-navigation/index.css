@@ -1,0 +1,23 @@
+.dashboard-navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dashboard-navigation .dashboard-nav-link {
+  --flow-spacer: 1.5rem;
+  box-shadow: 0px 5px 25px -5px #0c0b0d0a;
+  background-color: #fff;
+  padding: 1rem;
+  height: 114px;
+  width: 150px;
+  border-radius: 1rem;
+  color: var(--dark);
+  font-size: 1rem;
+  border: 1px solid transparent;
+}
+
+.dashboard-navigation .dashboard-nav-link.active {
+  background-color: #f4ecf2;
+  border: 1px solid var(--purple);
+}

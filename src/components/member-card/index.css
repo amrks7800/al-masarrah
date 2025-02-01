@@ -1,0 +1,66 @@
+.member-card {
+  display: grid;
+  grid-template-areas: "pile";
+  border-radius: 1rem;
+}
+
+.member-card > * {
+  grid-area: pile;
+}
+
+.member-card .member-info {
+  backdrop-filter: blur(4px);
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: grid;
+  gap: 1rem;
+  align-self: end;
+  margin: 1rem;
+}
+
+.member-card .member-info > * {
+  margin: 0;
+}
+
+.member-card .member-info img {
+  width: 100px;
+  aspect-ratio: 1;
+}
+
+.member-card .member-info h3 {
+  font-size: 16px;
+  font-weight: 750;
+  line-height: 28px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #19191b;
+}
+
+.member-card .member-info h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.8px;
+  letter-spacing: -0.02em;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #0c9eb7;
+}
+
+.member-card .member-info p {
+  color: #787a82;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.member-card img {
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}

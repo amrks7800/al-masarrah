@@ -1,0 +1,47 @@
+.file-input__wrapper {
+  --border-color: var(--ment);
+  padding: 1rem;
+  position: relative;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  display: grid;
+  place-content: center;
+}
+
+.file-input__wrapper p {
+  color: var(--green);
+  font-weight: 600;
+  gap: 0.5rem;
+}
+
+.pdf-icon {
+  margin-inline: auto;
+}
+
+.file-input.error .file-input__wrapper {
+  --border-color: red;
+}
+
+.file-input {
+  width: 250px;
+  height: 140px;
+}
+
+.file-input input {
+  display: none;
+}
+
+.file-input__wrapper button:has(.x-icon) {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.file-input label,
+.file-input label > div {
+  height: 100%;
+}
+
+.file-input .error-message {
+  color: red;
+}

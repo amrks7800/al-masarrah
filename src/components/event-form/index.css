@@ -1,0 +1,10 @@
+.event-form form {
+  --flow-spacer: 2.5rem;
+}
+
+.event-form h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32.34px;
+  color: var(--dark);
+}

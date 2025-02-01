@@ -1,0 +1,66 @@
+.definition {
+  padding-block: 25px;
+  padding-top: 100px;
+  background-color: #fafafa;
+}
+
+.definition .definition__container {
+  gap: 1rem;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .definition .definition__container {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+
+.definition .content span.intro-title {
+  font-size: 1.25rem;
+  color: var(--purple);
+  margin-bottom: 1.5rem;
+}
+
+.definition .content h2 {
+  --fs: 1.25rem;
+  color: var(--dark);
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0;
+  font-size: var(--fs);
+}
+
+@media screen and (min-width: 768px) {
+  .definition .content h2 {
+    --fs: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .definition .content h2 {
+    --fs: 2rem;
+  }
+}
+
+.definition .content h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  border-radius: 100vw;
+  background-color: var(--ment);
+  bottom: 0;
+  right: 0;
+}
+
+.definition .content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32.4px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--gray);
+  max-width: 50ch;
+}

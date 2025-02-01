@@ -1,0 +1,62 @@
+.main-textarea {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #bbc1ce;
+  background-color: #fbfbfb;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15.62px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  resize: none;
+  width: 100%;
+  height: 130px;
+}
+
+.main-textarea:focus {
+  outline: 0;
+}
+
+.textarea.themed {
+  position: relative;
+}
+
+.textarea.themed label {
+  background-color: #fff;
+  position: absolute;
+  top: -13%;
+  margin: 0;
+  right: 10px;
+  padding: 5px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.58px;
+  color: var(--gray-dark);
+}
+
+.textarea.themed textarea {
+  background-color: #fff;
+}
+
+/* error state */
+
+.textarea.error {
+  position: relative;
+}
+
+.textarea span.error-message {
+  position: absolute;
+  color: red;
+  right: 0;
+  bottom: -1.25rem;
+}
+
+.textarea.error textarea {
+  border: 1px solid red;
+}
+
+.textarea.error label {
+  color: red !important;
+}

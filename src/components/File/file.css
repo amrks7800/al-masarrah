@@ -1,0 +1,32 @@
+.file {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 116px 0px rgba(0, 0, 0, 0.05);
+}
+
+.file p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.file a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ment);
+  text-align: center;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+
+.file a:hover {
+  color: var(--purple);
+}

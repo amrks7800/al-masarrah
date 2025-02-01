@@ -1,0 +1,74 @@
+.login-form {
+  display: grid;
+  border-radius: 1rem;
+  overflow: clip;
+  box-shadow: 0px 12px 48px 0px #191b1c08;
+  margin-inline: 1rem;
+}
+
+.login-form > * {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.login-form .form {
+  background-color: #fff;
+}
+
+.login-form .form > div {
+  margin-bottom: 3rem;
+}
+
+.login-form .form h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--dark);
+}
+
+.login-form .form p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: #313957;
+  max-width: 32ch;
+}
+
+.login-form .form form {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  --flow-spacer: 1.5rem;
+}
+
+.login-form .form form [type="email"] {
+  text-align: end !important;
+}
+
+.login-form .form form button {
+  margin-top: 2rem;
+}
+
+.login-form .logo {
+  background-color: var(--clr-neutral-200);
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .login-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login-form > * {
+    padding: 2rem;
+  }
+
+  .login-form .form form input {
+    width: 350px;
+  }
+
+  .login-form .logo {
+    display: grid;
+  }
+}

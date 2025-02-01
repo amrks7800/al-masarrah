@@ -1,0 +1,46 @@
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 100vw;
+  padding: 10px;
+  margin-block: 1rem;
+  box-shadow: 0px 5px 25px -5px #0c0b0d0a;
+}
+
+.dashboard-header a {
+  display: grid;
+  place-items: center;
+}
+
+.dashboard-header > * {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.dashboard-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29.4px;
+  color: var(--dark);
+  margin: 0;
+}
+
+.dashboard-header input {
+  padding: 0;
+}
+.dashboard-header .search-input {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard-header .search-input {
+    display: flex;
+  }
+}
+
+.dashboard-header .avatar {
+  width: 50px;
+}

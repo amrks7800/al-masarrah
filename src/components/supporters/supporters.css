@@ -1,0 +1,32 @@
+.supporters {
+  overflow: hidden;
+  margin-block: 50px;
+  padding-block: 40px;
+}
+
+.supporters > h2 {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.supporters .wrapper {
+  animation: walk 10s linear 0s infinite normal none running;
+}
+
+.supporters__container {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-auto-columns: 192px;
+  gap: 5rem;
+}
+
+@keyframes walk {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}

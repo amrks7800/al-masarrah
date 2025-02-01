@@ -1,0 +1,44 @@
+.data-table__wrapper {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  margin-inline: auto;
+  max-width: 95vw;
+}
+
+.data-table {
+  margin-inline: auto;
+}
+
+.data-table td {
+  min-width: 150px;
+}
+
+.data-table thead {
+  margin-bottom: 1rem;
+}
+
+.data-table tbody tr:hover,
+.data-table tbody tr:hover td {
+  background: #e9fbfe;
+}
+
+.data-table thead td {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20.58px;
+  color: var(--dark);
+}
+
+.data-table td {
+  padding: 1rem 2rem;
+  border: 0;
+}
+
+.data-table td:has(.btn-group) {
+  padding-inline: 0.5rem;
+}
+
+.data-table td .btn-group {
+  justify-content: center;
+}

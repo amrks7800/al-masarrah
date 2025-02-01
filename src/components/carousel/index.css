@@ -1,0 +1,34 @@
+.carousel {
+  overflow-x: clip;
+}
+
+.carousel__inner {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+}
+
+.carousel .carousel__inner .carousel__item {
+  display: grid;
+  place-content: center;
+}
+
+.carousel__bullets {
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.carousel__bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #c1c7d0;
+  border-radius: 100vw;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.carousel__bullet.active {
+  background-color: var(--purple);
+  width: 35px;
+}

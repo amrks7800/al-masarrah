@@ -1,0 +1,82 @@
+.docs-policy {
+  box-shadow: 0px 4px 116px 0px #0000000d;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.docs-policy > img {
+  width: 100%;
+}
+
+.docs-policy h2 {
+  --fs: 1.25rem;
+  color: var(--dark);
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0;
+  font-size: var(--fs);
+  margin-block: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .docs-policy h2 {
+    --fs: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .docs-policy {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .docs-policy img {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .docs-policy h2 {
+    --fs: 2rem;
+  }
+}
+
+.docs-policy h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  border-radius: 100vw;
+  background-color: var(--ment);
+  bottom: 0;
+  right: 0;
+}
+
+.docs-policy p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33.48px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--gray);
+  max-width: 55ch;
+}
+
+.docs-policy ul {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25.2px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--dark);
+}
+
+.docs-policy ul li {
+  margin-bottom: 1rem;
+}
+
+.docs-policy ul li div {
+  gap: 1rem;
+}

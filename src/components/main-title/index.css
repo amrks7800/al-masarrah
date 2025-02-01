@@ -1,0 +1,37 @@
+.intro-title {
+  font-size: 0.825rem;
+  color: var(--purple);
+  margin-bottom: 1.5rem;
+}
+
+.main-title {
+  --fs: 1.25rem;
+  color: var(--dark);
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0;
+  font-size: var(--fs);
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    --fs: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-title {
+    --fs: 2rem;
+  }
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  border-radius: 100vw;
+  background-color: var(--ment);
+  bottom: 0;
+  right: 0;
+}

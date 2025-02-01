@@ -1,0 +1,52 @@
+.stat-card {
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0px 24px 50px 0px #0000000d;
+
+  backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .stat-card {
+    flex-direction: row;
+    align-items: center;
+    box-shadow: none;
+
+    backdrop-filter: none;
+    border-radius: 0;
+  }
+}
+
+.stat-card .icon-shape {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-content: center;
+  box-shadow: 12.15px 17.35px 41.64px 0px #190f2c05;
+  border-radius: 100vw;
+  background-color: var(--opaque-purple);
+}
+
+.stat-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--dark);
+  margin: 0;
+}
+
+.stat-card p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25.2px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--gray);
+  margin: 0;
+}

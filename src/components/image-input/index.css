@@ -1,0 +1,29 @@
+.image-input input {
+  display: none;
+}
+
+.image-input label {
+  width: 204px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 1rem;
+  display: block;
+  cursor: pointer;
+}
+
+.image-input label img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-input .error-message {
+  position: absolute;
+  bottom: -1.5rem;
+  right: 0;
+  color: red;
+}
+
+.image-input.error {
+  position: relative;
+}

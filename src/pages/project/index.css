@@ -1,0 +1,143 @@
+.project-page {
+  background: #fafafa;
+}
+
+.project-page > .container {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  isolation: isolate;
+}
+
+.project-page > .container > img {
+  width: 100%;
+}
+
+.project-page .content h1 {
+  --fs: 1.25rem;
+  color: var(--dark);
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0;
+  font-size: var(--fs);
+}
+
+@media screen and (min-width: 768px) {
+  .project-page .content h1 {
+    --fs: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project-page .content h1 {
+    --fs: 2rem;
+  }
+}
+
+.project-page .content h1::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  border-radius: 100vw;
+  background-color: var(--ment);
+  bottom: 0;
+  right: 0;
+}
+
+.project-page .content p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25.2px;
+  color: var(--gray);
+  max-width: 60ch;
+}
+
+.project-page .project-details .container {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-details .progress {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #ebfcfe;
+}
+
+.project-details .progress .donations h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  margin: 0;
+  text-decoration-skip-ink: none;
+  color: var(--ment);
+}
+
+.project-details .progress .donations span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--dark);
+}
+
+.project-details .progress .stats span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20.58px;
+  color: var(--gray);
+}
+
+.project-details ul {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25.2px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--dark);
+}
+
+.project-details ul li {
+  margin-bottom: 1rem;
+}
+
+.project-details ul li div {
+  gap: 1rem;
+}
+
+.project-details ul li p {
+  margin-inline-start: 2rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25.2px;
+  color: var(--gray);
+}
+
+.project-details .btn-group {
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .project-page > .container {
+    grid-template-columns: 100px 1fr 1fr 100px;
+  }
+
+  .project-page > .container > img {
+    grid-column: 2/3;
+  }
+
+  .project-page > .container > .content {
+    grid-column: 3/4;
+  }
+
+  .project-page .content p {
+    font-size: 1.02rem;
+  }
+}

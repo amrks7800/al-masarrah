@@ -1,0 +1,11 @@
+.dialog {
+  border: 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  min-width: 300px;
+  min-height: 200px;
+  background-image: url(/images/dialog.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  width: min(600px, 95vw);
+}

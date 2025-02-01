@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("./assets/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 125 950;
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
+  transition: var(--transition);
+}
+
+:root {
+  --opaque-purple: #ab348d54;
+  --purple: #ab348e;
+  --ment: #0c9eb7;
+  --yellow: #cfae24;
+  --white: #fff;
+  --dark: #172b4d;
+  --gray-dark: #42526e;
+  --gray: #7a869a;
+  --gray-light: #c1c7d0;
+  --clr-neutral-200: #fafafa;
+  --green: #00a14a;
+  --padding: 5rem;
+  --transition: 0.35s;
+}
+
+body {
+  background-color: var(--white);
+  overflow-x: clip;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--ment);
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  --container-width: 1000px;
+
+  width: min(98vw, var(--container-width));
+
+  padding-inline: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    --container-width: 1000px;
+  }
+  .main-title {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    --container-width: 1250px;
+  }
+  .main-title h2 {
+    font-size: 1.75rem;
+  }
+  .main-title p {
+    font-size: 1.125rem;
+    margin-top: 0.69rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    --container-width: 1500px;
+  }
+}
+
+/*
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+}
+
+*/

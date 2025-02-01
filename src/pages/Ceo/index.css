@@ -1,0 +1,68 @@
+.ceo-page {
+  background-color: #fafafa;
+}
+
+.ceo-page .container {
+  display: grid;
+  padding-block: 40px;
+  text-align: center;
+}
+
+.ceo-page .ceo-info h2 {
+  --fs: 1.25rem;
+  font-size: var(--fs);
+  font-weight: 750;
+  line-height: 44px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.ceo-page .ceo-info > p {
+  width: fit-content;
+  background: #d0f8ffb2;
+  padding: 1rem;
+  border-radius: 100vw;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ment);
+}
+
+.ceo-info .ceo-phone {
+  width: fit-content;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.ceo-info .ceo-phone p {
+  color: var(--gray-light);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: start;
+}
+
+.ceo-info .ceo-phone span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--dark);
+}
+
+@media (min-width: 768px) {
+  .ceo-page .ceo-info h2 {
+    --fs: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ceo-page .container {
+    grid-template-columns: max-content 1fr;
+    gap: 1rem;
+    text-align: start;
+  }
+
+  .ceo-page .ceo-info h2 {
+    --fs: 2rem;
+  }
+}

@@ -1,0 +1,56 @@
+.project-card * {
+  margin: 0;
+}
+
+.project-card {
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.project-card__img {
+  width: 100%;
+  border-radius: inherit;
+}
+
+.project-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26.46px;
+  text-align: right;
+  color: var(--dark);
+}
+
+.project-card__progress .fund {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.project-card__progress .fund p:nth-child(2) {
+  color: var(--gray);
+}
+
+.project-card__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--gray);
+  text-align: start;
+}
+
+.project-card__btn-group {
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-card__btn-group button {
+  width: max-content;
+  color: white;
+}
+
+.project-card__btn-group button a {
+  color: inherit;
+}

@@ -1,0 +1,18 @@
+.latest-news {
+  padding-block: 40px;
+  background-color: #f1fdff;
+}
+
+.latest-news .latest-news__intro h2 {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.latest-news .latest-news__intro p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33.48px;
+  text-align: center;
+  color: var(--gray);
+}

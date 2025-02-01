@@ -1,0 +1,73 @@
+.info-slot {
+  display: flex;
+  gap: 0.5rem;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--clr-neutral-200);
+  width: fit-content;
+}
+
+.info-slot span.title {
+  color: var(--gray);
+}
+
+.info-slot span.info {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.show-message .text span.message-text {
+  color: var(--ment);
+  font-weight: 500;
+  display: block;
+}
+
+.show-message .text span.text-info {
+  color: var(--gray);
+}
+
+.dashboard__contact {
+  margin-block: 40px;
+}
+
+.dashboard__contact .message-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20.58px;
+  color: var(--dark);
+  margin: 0;
+}
+
+.dashboard__contact .message-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--gray-dark);
+}
+
+.dashboard__contact .message-date {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.58px;
+  color: var(--gray);
+}
+
+.dashboard__contact h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.28px;
+  color: var(--dark);
+}
+
+.dashboard__contact > div {
+  margin-block: 1rem;
+}
+
+.dashboard__contact .btn-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dashboard__contact .msg-text-renderer {
+  max-width: 200px;
+}

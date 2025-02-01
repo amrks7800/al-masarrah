@@ -1,0 +1,37 @@
+.sub-hero {
+  background-image: url(/images/hero-section-sm.svg);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .sub-hero {
+    background-image: url(/images/hero-section.svg);
+  }
+}
+
+.sub-hero h2 {
+  font-size: 32px;
+  font-weight: 750;
+  line-height: 43.2px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+}
+
+.sub-hero p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.96px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
